@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-white text-gray-900 p-8">
+      <section className="max-w-4xl mx-auto text-center mb-16">
+        <h1 className="text-4xl font-bold mb-4">Owen McNamara Business Consultant</h1>
+        <p className="text-xl mb-6">
+          Empowering businesses with strategic sales and business consulting services that drive revenue growth, operational efficiency, and market expansion.
+        </p>
+        <Button className="text-lg px-6 py-3">Book a Free Consultation</Button>
+      </section>
+
+      <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2">Sales Training & Coaching</h2>
+            <p>
+              Group and individual coaching designed to teach proven sales strategies, improve team alignment, and drive conversions.
+            </p>
+            <p className="mt-2 font-semibold">€1,000–€1,200 / Day</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2">Business Development & Growth</h2>
+            <p>
+              Strategic consulting to unlock growth opportunities, optimize operations, and guide business expansion.
+            </p>
+            <p className="mt-2 font-semibold">€4,500 / Project</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2">Sales Process Optimization</h2>
+            <p>
+              Evaluate and streamline your sales funnel for better conversion rates and improved client acquisition.
+            </p>
+            <p className="mt-2 font-semibold">Project or Retainer Pricing</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-2">Digital Sales Strategy</h2>
+            <p>
+              Leverage cutting-edge tools and CRM platforms to automate, analyze, and elevate your sales performance.
+            </p>
+            <p className="mt-2 font-semibold">Hourly or Project-Based</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="max-w-4xl mx-auto mb-20">
+        <h2 className="text-3xl font-bold mb-4">About Owen</h2>
+        <p className="text-lg">
+          With over 30 years of expertise in sales and strategic business growth, Owen is dedicated to helping SMEs, startups, and professionals scale and optimize their sales performance. He offers tailored, results-driven consulting grounded in real-world experience and strategic insight.
+        </p>
+      </section>
+
+      <section className="max-w-4xl mx-auto mb-20">
+        <h2 className="text-3xl font-bold mb-4">Contact</h2>
+        <p className="mb-2">Phone: +353 87 2620987 / +353 1 4930584</p>
+        <p className="mb-2">Email: owenmcnamara@icloud.com</p>
+        <p>Location: Knocklyon, Dublin D24HWP4, Ireland</p>
+      </section>
+
+      <footer className="text-center py-6 border-t mt-16">
+        <p className="text-sm">&copy; {new Date().getFullYear()} Owen McNamara Business Consultant</p>
+      </footer>
+    </main>
+  );
+}
+</html>
